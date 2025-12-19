@@ -41,70 +41,87 @@
 }
 
 /* Center Navbar */
-.center-navbar {
-  background-color: #fff;
-  padding: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.center-navbar{
+  background:#fff;
+  padding:18px 0;
+  box-shadow:0 2px 6px rgba(0,0,0,.1);
 }
 
-.center-nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: wrap;
+.center-nav-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  gap:25px;
 }
 
-.center-navbar .logo img {
-  height: 50px;
+/* logo rotate */
+.logo img{
+  height:45px;
+  transition:none;
 }
 
-.center-navbar .search-bar {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  margin: 0 20px;
+
+/* search bar wide */
+.search-bar{
+  flex:1.2;
+  display:flex;
+}
+.search-bar input{
+  width:50%;
+  padding:16px 20px;
+  border:1px solid #ddd;
+  border-radius:30px 0 0 30px;
+}
+.search-bar button{
+  position: absolute;
+  width:55px;
+  height: 52px;
+  border:none;
+  background:#0f2537;
+  color:#fff;
+  border-radius: 50%;
 }
 
-.center-navbar .search-bar input {
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 25px 0 0 25px;
-  outline: none;
+.search-bar button i{
+  font-size:20px;              /* normal size */
+  transition: all 0.3s ease;
+  transform: rotate(90deg);
 }
 
-.center-navbar .search-bar button {
-  padding: 8px 12px;
-  border: none;
-  background-color: #19202d;
-  color: #fff;
-  border-radius: 0 25px 25px 0;
-  cursor: pointer;
+.search-bar button:hover i{
+  font-size:22px;              /* hover par bara */             /* pink */
 }
 
-.center-navbar .nav-icons a {
-  margin: 0 8px;
-  color: #19202d;
-  font-size: 20px;
-  text-decoration: none;
+.search-bar button:hover {
+  background: #f76666;      /* hover poore button par */
+  color: #fff;              /* icon color change karna ho toh yaha */
 }
 
-.center-navbar .contact-btn {
-  background-color: #19202d;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 25px;
-  text-decoration: none;
-  margin-left: 15px;
+/* outline icons */
+.nav-icons{
+  display:flex;
+  gap:22px;
+  font-size:22px;
+  color:#0f2537;
 }
 
-.center-navbar .hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
+/* contact button with icon */
+.contact-btn{
+  background:#0f2537;
+  color:#fff;
+  padding:16px 20px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:0;
 }
+.contact-btn i{
+  display:none;   /* arrow icon hide */
+}
+
  /* Hero Section */
 .hero-img{
   position: relative;
